@@ -48,10 +48,6 @@ import java.util.Scanner;
                 default:
                     System.out.println("Не корректное выражение,используйте целые числа и знаки (+,-,*,/)");
                 }
-            if (result>100) { System.out.println("Введите числа от 1до10 (I-IX)");
-                return " ";
-            }
-        else
             return String.valueOf(result);
 
         }
@@ -95,7 +91,7 @@ import java.util.Scanner;
     public static void main(String[] args) {
 
 
-         Scanner scanner = new Scanner(System.in);      //Ввод выражения
+         Scanner scanner = new Scanner(System.in);
          System.out.println("Введите выражение через пробел(2 + 4) или (ix / v) \n" +
                                      "Операнды от 1 до 10 (I-X)");
 
@@ -110,7 +106,7 @@ import java.util.Scanner;
             }
          calc(userInput);
          if (oper1>10||oper2>10) {
-             System.out.println("Операнды от 1 до 10(I-Ix)");
+             System.out.println("Операнды от 0 до 10(N-X)");
          break;
          }
 
